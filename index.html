@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PomPom Hub – Premium Adult Entertainment | pompomhub.com</title>
+  <meta name="description" content="PomPom Hub is your ultimate destination for premium adult entertainment. Explore top categories including amateur, MILF, Asian, Latina, BBW, lesbian, hardcore, POV, and more. Visit pompomhub.com now." />
+  <meta name="keywords" content="pompom hub, pompomhub, adult entertainment, free porn, xxx videos, amateur, MILF, teen 18+, lesbian, Asian, Latina, BBW, ebony, hardcore, softcore, POV, anal, creampie, blowjob, cumshot, big tits, big ass, brunette, blonde, redhead, couples, solo, hentai, fetish, BDSM, gangbang, threesome, interracial, mature, college, step, OnlyFans, pornstar, homemade, reality, roleplay" />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="PomPom Hub" />
+  <link rel="canonical" href="https://webtools.ninja/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="PomPom Hub – Premium Adult Entertainment" />
+  <meta property="og:description" content="Explore thousands of free premium adult videos. Top categories: amateur, MILF, Asian, Latina, BBW, lesbian, hardcore, POV & more. Visit pompomhub.com." />
+  <meta property="og:url" content="https://webtools.ninja/" />
+  <meta property="og:site_name" content="PomPom Hub" />
+  <meta property="og:image" content="https://webtools.ninja/og-image.jpg" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="PomPom Hub – Premium Adult Entertainment" />
+  <meta name="twitter:description" content="Explore thousands of free premium adult videos at PomPom Hub. Visit pompomhub.com." />
+  <meta name="twitter:image" content="https://webtools.ninja/og-image.jpg" />
+
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "PomPom Hub",
+    "url": "https://webtools.ninja/",
+    "description": "Premium adult entertainment hub featuring top categories for adults 18+.",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://pompomhub.com/?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    },
+    "sameAs": ["https://pompomhub.com"]
+  }
+  </script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet" />
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --black: #090909;
+      --deep: #0f0a0c;
+      --surface: #16101399;
+      --surface2: #1e1318;
+      --rose: #c0294a;
+      --rose-light: #e84068;
+      --rose-glow: rgba(192, 41, 74, 0.18);
+      --gold: #c9963a;
+      --gold-light: #e8b455;
+      --cream: #f0e8df;
+      --muted: #8a7a82;
+      --border: rgba(192, 41, 74, 0.2);
+      --text: #ede0e5;
+      --ff-display: 'Cormorant Garamond', Georgia, serif;
+      --ff-body: 'DM Sans', system-ui, sans-serif;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--black);
+      color: var(--text);
+      font-family: var(--ff-body);
+      font-size: 16px;
+      line-height: 1.65;
+      overflow-x: hidden;
+      min-height: 100vh;
+    }
+
+    /* ── Age Gate ── */
+    #age-gate {
+      position: fixed; inset: 0; z-index: 9999;
+      background: #060304;
+      display: flex; align-items: center; justify-content: center;
+      flex-direction: column;
+      padding: 2rem;
+      animation: fadeIn .4s ease;
+    }
+    #age-gate.hidden { display: none; }
+    .ag-logo {
+      font-family: var(--ff-display);
+      font-size: clamp(2.4rem, 6vw, 3.5rem);
+      font-weight: 700;
+      color: var(--cream);
+      letter-spacing: -.02em;
+      margin-bottom: .4rem;
+      text-align: center;
+    }
+    .ag-logo span { color: var(--rose-light); }
+    .ag-tagline {
+      font-size: .9rem;
+      color: var(--muted);
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      margin-bottom: 2.5rem;
+      text-align: center;
+    }
+    .ag-box {
+      background: var(--surface2);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 2.5rem 2rem;
+      max-width: 420px;
+      width: 100%;
+      text-align: center;
+    }
+    .ag-box h2 {
+      font-family: var(--ff-display);
+      font-size: 1.8rem;
+      font-weight: 600;
+      color: var(--cream);
+      margin-bottom: .7rem;
+    }
+    .ag-box p {
+      color: var(--muted);
+      font-size: .88rem;
+      margin-bottom: 1.8rem;
+      line-height: 1.6;
+    }
+    .ag-btns { display: flex; gap: .8rem; justify-content: center; flex-wrap: wrap; }
+    .btn-yes {
+      background: linear-gradient(135deg, var(--rose) 0%, #a0203d 100%);
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      padding: .8rem 2.2rem;
+      font-family: var(--ff-body);
+      font-size: .9rem;
+      font-weight: 500;
+      cursor: pointer;
+      letter-spacing: .04em;
+      transition: all .25s;
+    }
+    .btn-yes:hover { transform: translateY(-2px); box-shadow: 0 8px 28px rgba(192,41,74,.4); }
+    .btn-no {
+      background: transparent;
+      color: var(--muted);
+      border: 1px solid rgba(138,122,130,.3);
+      border-radius: 8px;
+      padding: .8rem 2rem;
+      font-family: var(--ff-body);
+      font-size: .9rem;
+      cursor: pointer;
+      transition: all .25s;
+    }
+    .btn-no:hover { color: var(--cream); border-color: var(--muted); }
+    .ag-disclaimer {
+      margin-top: 1.2rem;
+      font-size: .75rem;
+      color: rgba(138,122,130,.6);
+    }
+
+    /* ── Background ── */
+    .bg-mesh {
+      position: fixed; inset: 0; z-index: 0; pointer-events: none;
+      background:
+        radial-gradient(ellipse 60% 50% at 20% 20%, rgba(192,41,74,.12) 0%, transparent 60%),
+        radial-gradient(ellipse 50% 40% at 80% 80%, rgba(201,150,58,.08) 0%, transparent 55%),
+        radial-gradient(ellipse 40% 30% at 60% 30%, rgba(192,41,74,.06) 0%, transparent 50%);
+    }
+    .bg-grid {
+      position: fixed; inset: 0; z-index: 0; pointer-events: none; opacity: .025;
+      background-image:
+        linear-gradient(rgba(240,232,223,.8) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(240,232,223,.8) 1px, transparent 1px);
+      background-size: 60px 60px;
+    }
+
+    /* ── Layout ── */
+    .wrapper { position: relative; z-index: 1; }
+
+    /* ── Nav ── */
+    nav {
+      position: sticky; top: 0; z-index: 100;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 1.1rem 2.5rem;
+      background: rgba(9,9,9,.85);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border);
+      animation: slideDown .6s ease both;
+    }
+    .nav-logo {
+      font-family: var(--ff-display);
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: var(--cream);
+      text-decoration: none;
+      letter-spacing: -.02em;
+    }
+    .nav-logo span { color: var(--rose-light); }
+    .nav-badge {
+      background: var(--rose);
+      color: #fff;
+      font-size: .65rem;
+      font-weight: 500;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      padding: .2rem .55rem;
+      border-radius: 4px;
+      margin-left: .5rem;
+      vertical-align: middle;
+    }
+    .nav-cta {
+      background: linear-gradient(135deg, var(--rose) 0%, #a0203d 100%);
+      color: #fff;
+      text-decoration: none;
+      padding: .55rem 1.4rem;
+      border-radius: 7px;
+      font-size: .85rem;
+      font-weight: 500;
+      letter-spacing: .03em;
+      transition: all .25s;
+      border: none; cursor: pointer;
+    }
+    .nav-cta:hover { transform: translateY(-2px); box-shadow: 0 6px 24px rgba(192,41,74,.4); }
+
+    /* ── Hero ── */
+    .hero {
+      min-height: 92vh;
+      display: flex; align-items: center; justify-content: center;
+      text-align: center;
+      padding: 5rem 1.5rem 4rem;
+      position: relative;
+    }
+    .hero-inner { max-width: 780px; }
+    .hero-eyebrow {
+      display: inline-block;
+      font-size: .75rem;
+      letter-spacing: .22em;
+      text-transform: uppercase;
+      color: var(--gold);
+      border: 1px solid rgba(201,150,58,.3);
+      border-radius: 100px;
+      padding: .35rem 1.1rem;
+      margin-bottom: 1.8rem;
+      animation: fadeUp .7s .2s ease both;
+    }
+    .hero h1 {
+      font-family: var(--ff-display);
+      font-size: clamp(3rem, 9vw, 6.5rem);
+      font-weight: 700;
+      line-height: 1.0;
+      letter-spacing: -.03em;
+      color: var(--cream);
+      margin-bottom: 1.2rem;
+      animation: fadeUp .7s .35s ease both;
+    }
+    .hero h1 em {
+      font-style: italic;
+      color: var(--rose-light);
+    }
+    .hero-sub {
+      font-size: clamp(.95rem, 2.5vw, 1.15rem);
+      color: var(--muted);
+      max-width: 560px;
+      margin: 0 auto 2.8rem;
+      line-height: 1.75;
+      animation: fadeUp .7s .5s ease both;
+    }
+    .hero-cta-group {
+      display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;
+      animation: fadeUp .7s .65s ease both;
+    }
+    .btn-primary {
+      background: linear-gradient(135deg, var(--rose) 0%, #a0203d 100%);
+      color: #fff;
+      text-decoration: none;
+      padding: .9rem 2.4rem;
+      border-radius: 9px;
+      font-size: 1rem;
+      font-weight: 500;
+      letter-spacing: .02em;
+      transition: all .3s;
+      display: inline-flex; align-items: center; gap: .5rem;
+    }
+    .btn-primary:hover { transform: translateY(-3px); box-shadow: 0 12px 36px rgba(192,41,74,.45); }
+    .btn-secondary {
+      background: transparent;
+      color: var(--cream);
+      text-decoration: none;
+      padding: .9rem 2.4rem;
+      border-radius: 9px;
+      font-size: 1rem;
+      font-weight: 400;
+      border: 1px solid rgba(240,232,223,.2);
+      transition: all .3s;
+      display: inline-flex; align-items: center; gap: .5rem;
+    }
+    .btn-secondary:hover { background: rgba(240,232,223,.06); border-color: rgba(240,232,223,.4); transform: translateY(-2px); }
+
+    .hero-stats {
+      display: flex; gap: 2.5rem; justify-content: center; flex-wrap: wrap;
+      margin-top: 4rem;
+      animation: fadeUp .7s .8s ease both;
+    }
+    .stat { text-align: center; }
+    .stat-num {
+      display: block;
+      font-family: var(--ff-display);
+      font-size: 2.2rem;
+      font-weight: 700;
+      color: var(--cream);
+      line-height: 1.1;
+    }
+    .stat-num span { color: var(--rose-light); }
+    .stat-label {
+      font-size: .78rem;
+      color: var(--muted);
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      margin-top: .2rem;
+    }
+    .stat-divider {
+      width: 1px;
+      background: rgba(240,232,223,.12);
+      height: 48px;
+      align-self: center;
+    }
+
+    /* ── Scroll indicator ── */
+    .scroll-hint {
+      position: absolute; bottom: 2.5rem; left: 50%; transform: translateX(-50%);
+      display: flex; flex-direction: column; align-items: center; gap: .4rem;
+      color: var(--muted); font-size: .72rem; letter-spacing: .15em; text-transform: uppercase;
+      animation: fadeIn 1s 1.2s ease both;
+    }
+    .scroll-line {
+      width: 1px; height: 50px;
+      background: linear-gradient(to bottom, var(--rose), transparent);
+      animation: scrollPulse 2s ease-in-out infinite;
+    }
+
+    /* ── Section ── */
+    section { padding: 6rem 1.5rem; }
+    .section-inner { max-width: 1100px; margin: 0 auto; }
+    .section-label {
+      font-size: .72rem;
+      letter-spacing: .22em;
+      text-transform: uppercase;
+      color: var(--rose-light);
+      margin-bottom: .8rem;
+      display: block;
+    }
+    .section-title {
+      font-family: var(--ff-display);
+      font-size: clamp(2rem, 5vw, 3rem);
+      font-weight: 600;
+      color: var(--cream);
+      line-height: 1.15;
+      letter-spacing: -.02em;
+      margin-bottom: 1rem;
+    }
+    .section-desc {
+      color: var(--muted);
+      font-size: 1rem;
+      max-width: 540px;
+      line-height: 1.75;
+      margin-bottom: 3rem;
+    }
+
+    /* ── Categories Grid ── */
+    .categories-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+      gap: 1rem;
+    }
+    .cat-card {
+      background: var(--surface2);
+      border: 1px solid rgba(192,41,74,.15);
+      border-radius: 12px;
+      padding: 1.2rem 1rem;
+      text-align: center;
+      cursor: pointer;
+      text-decoration: none;
+      display: flex; flex-direction: column; align-items: center; gap: .5rem;
+      transition: all .3s cubic-bezier(.25,.46,.45,.94);
+      position: relative; overflow: hidden;
+    }
+    .cat-card::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: radial-gradient(ellipse at center bottom, rgba(192,41,74,.12), transparent 70%);
+      opacity: 0; transition: opacity .3s;
+    }
+    .cat-card:hover { transform: translateY(-5px); border-color: rgba(192,41,74,.45); }
+    .cat-card:hover::before { opacity: 1; }
+    .cat-icon {
+      font-size: 1.6rem;
+      line-height: 1;
+      filter: grayscale(.3);
+      transition: transform .3s;
+    }
+    .cat-card:hover .cat-icon { transform: scale(1.15); }
+    .cat-name {
+      font-size: .82rem;
+      font-weight: 500;
+      color: var(--cream);
+      letter-spacing: .02em;
+    }
+    .cat-count {
+      font-size: .72rem;
+      color: var(--muted);
+    }
+
+    /* ── Tags Cloud ── */
+    .tags-section { padding: 5rem 1.5rem; background: var(--surface2); }
+    .tags-cloud {
+      display: flex; flex-wrap: wrap; gap: .65rem;
+      margin-top: 2.5rem;
+    }
+    .tag {
+      background: rgba(192,41,74,.1);
+      border: 1px solid rgba(192,41,74,.22);
+      color: var(--text);
+      text-decoration: none;
+      padding: .45rem 1rem;
+      border-radius: 100px;
+      font-size: .82rem;
+      transition: all .25s;
+      white-space: nowrap;
+    }
+    .tag:hover { background: rgba(192,41,74,.25); border-color: var(--rose-light); color: #fff; transform: translateY(-2px); }
+    .tag.hot { border-color: rgba(201,150,58,.4); color: var(--gold-light); background: rgba(201,150,58,.08); }
+    .tag.hot:hover { background: rgba(201,150,58,.2); border-color: var(--gold); }
+
+    /* ── Features ── */
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin-top: 3rem;
+    }
+    .feature-card {
+      background: var(--surface2);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 1.8rem;
+      transition: all .3s;
+    }
+    .feature-card:hover { border-color: rgba(192,41,74,.45); transform: translateY(-4px); }
+    .feature-icon {
+      font-size: 1.8rem; margin-bottom: 1rem;
+    }
+    .feature-title {
+      font-family: var(--ff-display);
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: var(--cream);
+      margin-bottom: .5rem;
+    }
+    .feature-desc { font-size: .88rem; color: var(--muted); line-height: 1.7; }
+
+    /* ── CTA Banner ── */
+    .cta-banner {
+      text-align: center; padding: 7rem 1.5rem;
+      position: relative; overflow: hidden;
+    }
+    .cta-banner::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: radial-gradient(ellipse 80% 60% at 50% 50%, rgba(192,41,74,.15) 0%, transparent 70%);
+    }
+    .cta-banner .section-inner { position: relative; }
+    .cta-banner h2 {
+      font-family: var(--ff-display);
+      font-size: clamp(2.2rem, 6vw, 4rem);
+      font-weight: 700;
+      color: var(--cream);
+      line-height: 1.1;
+      letter-spacing: -.03em;
+      margin-bottom: 1.2rem;
+    }
+    .cta-banner h2 em { font-style: italic; color: var(--rose-light); }
+    .cta-banner p { color: var(--muted); font-size: 1rem; max-width: 480px; margin: 0 auto 2.5rem; }
+
+    /* ── Footer ── */
+    footer {
+      background: var(--deep);
+      border-top: 1px solid var(--border);
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+    .footer-logo {
+      font-family: var(--ff-display);
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: var(--cream);
+      text-decoration: none;
+      letter-spacing: -.02em;
+      display: inline-block;
+      margin-bottom: .6rem;
+    }
+    .footer-logo span { color: var(--rose-light); }
+    .footer-links {
+      display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap;
+      margin: 1.2rem 0;
+    }
+    .footer-links a {
+      color: var(--muted);
+      text-decoration: none;
+      font-size: .83rem;
+      transition: color .2s;
+    }
+    .footer-links a:hover { color: var(--cream); }
+    .footer-legal {
+      color: rgba(138,122,130,.5);
+      font-size: .75rem;
+      line-height: 1.8;
+      max-width: 620px;
+      margin: 1.5rem auto 0;
+    }
+    .footer-disclaimer {
+      background: rgba(192,41,74,.07);
+      border: 1px solid rgba(192,41,74,.15);
+      border-radius: 8px;
+      padding: .9rem 1.2rem;
+      margin: 1.5rem auto 0;
+      max-width: 680px;
+      font-size: .75rem;
+      color: var(--muted);
+      line-height: 1.7;
+    }
+
+    /* ── Animations ── */
+    @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+    @keyframes fadeUp { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes slideDown { from { opacity: 0; transform: translateY(-16px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes scrollPulse { 0%, 100% { opacity: .2; transform: scaleY(1); } 50% { opacity: 1; transform: scaleY(.6); } }
+    @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+    @keyframes pulse { 0%, 100% { opacity: .4; } 50% { opacity: .8; } }
+
+    /* Scroll reveal */
+    .reveal {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity .7s ease, transform .7s ease;
+    }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+
+    /* ── Responsive ── */
+    @media (max-width: 640px) {
+      nav { padding: .9rem 1.2rem; }
+      .hero { padding: 4rem 1.2rem 3rem; min-height: 88vh; }
+      .stat-divider { display: none; }
+      .hero-stats { gap: 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ══ Age Gate ══ -->
+<div id="age-gate">
+  <div class="ag-logo">Pom<span>Pom</span> Hub</div>
+  <div class="ag-tagline">Premium Adult Entertainment</div>
+  <div class="ag-box">
+    <h2>Age Verification</h2>
+    <p>This website contains adult content and is strictly for individuals who are 18 years of age or older. By entering, you confirm you are of legal age in your jurisdiction.</p>
+    <div class="ag-btns">
+      <button class="btn-yes" onclick="enterSite()">I am 18+ — Enter</button>
+      <button class="btn-no" onclick="exitSite()">I am under 18</button>
+    </div>
+    <p class="ag-disclaimer">By clicking "Enter" you agree to our <a href="/terms" style="color:var(--rose-light);text-decoration:none;">Terms of Service</a> & confirm you are 18+.</p>
+  </div>
+</div>
+
+<!-- ══ Backgrounds ══ -->
+<div class="bg-mesh" aria-hidden="true"></div>
+<div class="bg-grid" aria-hidden="true"></div>
+
+<!-- ══ Main Wrapper ══ -->
+<div class="wrapper" id="main-content" style="display:none;">
+
+  <!-- Nav -->
+  <nav aria-label="Main navigation">
+    <a href="/" class="nav-logo">Pom<span>Pom</span> Hub <span class="nav-badge">18+</span></a>
+    <a href="https://pompomhub.com" class="nav-cta" target="_blank" rel="noopener">Visit Full Site →</a>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero" role="banner">
+    <div class="hero-inner">
+      <div class="hero-eyebrow">✦ Premium Adult Entertainment Hub</div>
+      <h1>Welcome to<br /><em>PomPom Hub</em></h1>
+      <p class="hero-sub">
+        Thousands of premium videos, top categories, and the hottest content online —
+        all in one beautifully curated destination. Your ultimate adult entertainment hub.
+      </p>
+      <div class="hero-cta-group">
+        <a href="https://pompomhub.com" class="btn-primary" target="_blank" rel="noopener">
+          🔥 Enter PomPom Hub
+        </a>
+        <a href="#categories" class="btn-secondary">
+          Browse Categories ↓
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num">50<span>K+</span></span>
+          <div class="stat-label">HD Videos</div>
+        </div>
+        <div class="stat-divider" aria-hidden="true"></div>
+        <div class="stat">
+          <span class="stat-num">200<span>+</span></span>
+          <div class="stat-label">Categories</div>
+        </div>
+        <div class="stat-divider" aria-hidden="true"></div>
+        <div class="stat">
+          <span class="stat-num">Free</span>
+          <div class="stat-label">Always Free</div>
+        </div>
+        <div class="stat-divider" aria-hidden="true"></div>
+        <div class="stat">
+          <span class="stat-num">4<span>K</span></span>
+          <div class="stat-label">Ultra HD</div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-hint" aria-hidden="true">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </header>
+
+  <!-- Categories -->
+  <section id="categories" aria-labelledby="cat-heading">
+    <div class="section-inner">
+      <span class="section-label">Top Categories</span>
+      <h2 class="section-title" id="cat-heading">Browse by Category</h2>
+      <p class="section-desc">Explore the most popular adult content categories. Thousands of free HD videos updated daily.</p>
+      <div class="categories-grid reveal">
+        <a href="https://pompomhub.com/category/amateur" class="cat-card" target="_blank" rel="noopener">
+          <div class="cat-icon">🎥</div>
+          <div class="cat-name">Amateur</div>
+          <div class="cat-count">12,400+ videos</div>
+        </a>
+        <a href="https://pompomhub.com/category/milf" class="cat-card" target="_blank" rel="noopener">
+          <div class="cat-icon">🔥</div>
+          <div class="cat-name">MILF</div>
+          <div class="cat-count">8,900+ videos</div>
+        </a>
+        <a href="https://pompomhub.com/category/teen-18plus" class="cat-card" target="_blank" rel="noopener">
+          <div class="cat-icon">✨</div>
+          <div class="cat-name">Teen 18+</div>
+          <div class="cat-count">9,200+ videos</div>
+        </a>
+        <a href="https://pompomhub.com/category/lesbian" class="cat-card" target="_blank" rel="noopener">
+          <div class="cat-icon">💞</div>
+          <div class="cat-name">Lesbian</div>
+          <div class="cat-count">6,700+ videos</div>
+        </a>
+        <a href="https://pompomhub.com/category/asian" class="cat-card" target="_blank" rel="noopener">
+          <div class="cat-icon">🌸</div>
+          <div class="cat-name">Asian</div>
+          <div class="cat-count">7,500+ videos</div>
+        </a>
+        <a href="https://pompomhub.com/category/latina" class="cat-card" target="_blank" rel="noopener">
+          <div class="cat-icon">💃</div>
+          <div class="cat-name">Latina</div>
+          <div class="cat-count">5,400+ videos</div>
+        </a>
+        <a href="https://pompomhub.com/category/bbw" class="cat-card" target="_blank" rel="noopener">
+          <div class="cat-icon">💋</div>
+          <div class="cat-name">BBW</div>
+          <div class="cat-count">4,800+ videos</div>
+        </a>
+        <a href="https://pompomhub.com/category/ebony" class="cat-card" target="_blank" rel="noopener">
+          <div class="cat-icon">⚡</div>
+          <div class="cat-name">Ebony</div>
+          <div class="cat-count">5,900+ videos</div>
+        </a>
+        <a href="https://pompomhub.com/category/hardcore" class="cat-card" target="_blank" rel="noopener">
+          <div class="cat-icon">🎬</div>
+          <div class="cat-name">Hardcore</div>
+          <div class="cat-count">11,000+ videos</div>
+        </a>
+        <a href="https://pompomhub.com/category/pov" class="cat-card" target="_blank" rel="noopener">
+          <div class="cat-icon">👁️</div>
+          <div class="cat-name">POV</div>
+          <div class="cat-count">7,100+ videos</div>
+        </a>
+        <a href="https://pompomhub.com/category/anal" class="cat-card" target="_blank" rel="noopener">
+          <div class="cat-icon">🌡️</div>
+          <div class="cat-name">Anal</div>
+          <div class="cat-count">6,300+ videos</div>
+        </a>
+        <a href="https://pompomhub.com/category/blowjob" class="cat-card" target="_blank" rel="noopener">
+          <div class="cat-icon">💎</div>
+          <div class="cat-name">Blowjob</div>
+          <div class="cat-count">8,200+ videos</div>
+        </a>
+        <a href="https://pompomhub.com/category/big-tits" class="cat-card" target="_blank" rel="noopener">
+          <div class="cat-icon">🏆</div>
+          <div class="cat-name">Big Tits</div>
+          <div class="cat-count">9,600+ videos</div>
+        </a>
+        <a href="https://pompomhub.com/category/big-ass" class="cat-card" target="_blank" rel="noopener">
+          <div class="cat-icon">🍑</div>
+          <div class="cat-name">Big Ass</div>
+          <div class="cat-count">7,800+ videos</div>
+        </a>
+        <a href="https://pompomhub.com/category/mature" class="cat-card" target="_blank" rel="noopener">
+          <div class="cat-icon">🕊️</div>
+          <div class="cat-name">Mature</div>
+          <div class="cat-count">4,200+ videos</div>
+        </a>
+        <a href="https://pompomhub.com/category/interracial" class="cat-card" target="_blank" rel="noopener">
+          <div class="cat-icon">🌍</div>
+          <div class="cat-name">Interracial</div>
+          <div class="cat-count">5,100+ videos</div>
+        </a>
+        <a href="https://pompomhub.com/category/threesome" class="cat-card" target="_blank" rel="noopener">
+          <div class="cat-icon">👥</div>
+          <div class="cat-name">Threesome</div>
+          <div class="cat-count">3,900+ videos</div>
+        </a>
+        <a href="https://pompomhub.com/category/hentai" class="cat-card" target="_blank" rel="noopener">
+          <div class="cat-icon">🎌</div>
+          <div class="cat-name">Hentai</div>
+          <div class="cat-count">3,600+ videos</div>
+        </a>
+        <a href="https://pompomhub.com/category/fetish" class="cat-card" target="_blank" rel="noopener">
+          <div class="cat-icon">🖤</div>
+          <div class="cat-name">Fetish</div>
+          <div class="cat-count">3,400+ videos</div>
+        </a>
+        <a href="https://pompomhub.com/category/creampie" class="cat-card" target="_blank" rel="noopener">
+          <div class="cat-icon">🌊</div>
+          <div class="cat-name">Creampie</div>
+          <div class="cat-count">4,700+ videos</div>
+        </a>
+        <a href="https://pompomhub.com/category/gangbang" class="cat-card" target="_blank" rel="noopener">
+          <div class="cat-icon">🔥</div>
+          <div class="cat-name">Gangbang</div>
+          <div class="cat-count">2,800+ videos</div>
+        </a>
+        <a href="https://pompomhub.com/category/homemade" class="cat-card" target="_blank" rel="noopener">
+          <div class="cat-icon">🏠</div>
+          <div class="cat-name">Homemade</div>
+          <div class="cat-count">6,500+ videos</div>
+        </a>
+        <a href="https://pompomhub.com/category/onlyfans" class="cat-card" target="_blank" rel="noopener">
+          <div class="cat-icon">⭐</div>
+          <div class="cat-name">OnlyFans</div>
+          <div class="cat-count">4,100+ videos</div>
+        </a>
+        <a href="https://pompomhub.com/category/college" class="cat-card" target="_blank" rel="noopener">
+          <div class="cat-icon">🎓</div>
+          <div class="cat-name">College 18+</div>
+          <div class="cat-count">3,300+ videos</div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tags Cloud -->
+  <section class="tags-section" aria-labelledby="tags-heading">
+    <div class="section-inner">
+      <span class="section-label">Popular Search Tags</span>
+      <h2 class="section-title" id="tags-heading">Trending Tags on PomPom Hub</h2>
+      <p class="section-desc">Discover the most searched keywords and tags across our entire library.</p>
+      <div class="tags-cloud reveal">
+        <a href="https://pompomhub.com/tag/pompom-hub" class="tag hot" target="_blank" rel="noopener">#pompom hub</a>
+        <a href="https://pompomhub.com/tag/pompomhub" class="tag hot" target="_blank" rel="noopener">#pompomhub</a>
+        <a href="https://pompomhub.com/tag/free-porn" class="tag hot" target="_blank" rel="noopener">#free porn</a>
+        <a href="https://pompomhub.com/tag/xxx" class="tag hot" target="_blank" rel="noopener">#xxx videos</a>
+        <a href="https://pompomhub.com/tag/hd-porn" class="tag hot" target="_blank" rel="noopener">#HD porn</a>
+        <a href="https://pompomhub.com/tag/amateur" class="tag" target="_blank" rel="noopener">#amateur porn</a>
+        <a href="https://pompomhub.com/tag/milf" class="tag" target="_blank" rel="noopener">#MILF</a>
+        <a href="https://pompomhub.com/tag/teen-18" class="tag" target="_blank" rel="noopener">#teen 18+</a>
+        <a href="https://pompomhub.com/tag/lesbian" class="tag" target="_blank" rel="noopener">#lesbian</a>
+        <a href="https://pompomhub.com/tag/asian" class="tag" target="_blank" rel="noopener">#Asian porn</a>
+        <a href="https://pompomhub.com/tag/latina" class="tag" target="_blank" rel="noopener">#Latina</a>
+        <a href="https://pompomhub.com/tag/bbw" class="tag" target="_blank" rel="noopener">#BBW</a>
+        <a href="https://pompomhub.com/tag/ebony" class="tag" target="_blank" rel="noopener">#ebony</a>
+        <a href="https://pompomhub.com/tag/big-tits" class="tag" target="_blank" rel="noopener">#big tits</a>
+        <a href="https://pompomhub.com/tag/big-ass" class="tag" target="_blank" rel="noopener">#big ass</a>
+        <a href="https://pompomhub.com/tag/blowjob" class="tag" target="_blank" rel="noopener">#blowjob</a>
+        <a href="https://pompomhub.com/tag/cumshot" class="tag" target="_blank" rel="noopener">#cumshot</a>
+        <a href="https://pompomhub.com/tag/creampie" class="tag" target="_blank" rel="noopener">#creampie</a>
+        <a href="https://pompomhub.com/tag/anal" class="tag" target="_blank" rel="noopener">#anal</a>
+        <a href="https://pompomhub.com/tag/pov" class="tag" target="_blank" rel="noopener">#POV</a>
+        <a href="https://pompomhub.com/tag/hardcore" class="tag" target="_blank" rel="noopener">#hardcore</a>
+        <a href="https://pompomhub.com/tag/softcore" class="tag" target="_blank" rel="noopener">#softcore</a>
+        <a href="https://pompomhub.com/tag/interracial" class="tag" target="_blank" rel="noopener">#interracial</a>
+        <a href="https://pompomhub.com/tag/threesome" class="tag" target="_blank" rel="noopener">#threesome</a>
+        <a href="https://pompomhub.com/tag/gangbang" class="tag" target="_blank" rel="noopener">#gangbang</a>
+        <a href="https://pompomhub.com/tag/mature" class="tag" target="_blank" rel="noopener">#mature</a>
+        <a href="https://pompomhub.com/tag/bdsm" class="tag" target="_blank" rel="noopener">#BDSM</a>
+        <a href="https://pompomhub.com/tag/fetish" class="tag" target="_blank" rel="noopener">#fetish</a>
+        <a href="https://pompomhub.com/tag/hentai" class="tag" target="_blank" rel="noopener">#hentai</a>
+        <a href="https://pompomhub.com/tag/stepfamily" class="tag" target="_blank" rel="noopener">#step family</a>
+        <a href="https://pompomhub.com/tag/roleplay" class="tag" target="_blank" rel="noopener">#roleplay</a>
+        <a href="https://pompomhub.com/tag/onlyfans-leaks" class="tag" target="_blank" rel="noopener">#OnlyFans</a>
+        <a href="https://pompomhub.com/tag/pornstar" class="tag" target="_blank" rel="noopener">#pornstar</a>
+        <a href="https://pompomhub.com/tag/homemade" class="tag" target="_blank" rel="noopener">#homemade</a>
+        <a href="https://pompomhub.com/tag/reality" class="tag" target="_blank" rel="noopener">#reality porn</a>
+        <a href="https://pompomhub.com/tag/blonde" class="tag" target="_blank" rel="noopener">#blonde</a>
+        <a href="https://pompomhub.com/tag/brunette" class="tag" target="_blank" rel="noopener">#brunette</a>
+        <a href="https://pompomhub.com/tag/redhead" class="tag" target="_blank" rel="noopener">#redhead</a>
+        <a href="https://pompomhub.com/tag/solo" class="tag" target="_blank" rel="noopener">#solo</a>
+        <a href="https://pompomhub.com/tag/couples" class="tag" target="_blank" rel="noopener">#couples</a>
+        <a href="https://pompomhub.com/tag/college" class="tag" target="_blank" rel="noopener">#college 18+</a>
+        <a href="https://pompomhub.com/tag/japanese" class="tag" target="_blank" rel="noopener">#Japanese</a>
+        <a href="https://pompomhub.com/tag/korean" class="tag" target="_blank" rel="noopener">#Korean</a>
+        <a href="https://pompomhub.com/tag/indian" class="tag" target="_blank" rel="noopener">#Indian</a>
+        <a href="https://pompomhub.com/tag/arab" class="tag" target="_blank" rel="noopener">#Arab</a>
+        <a href="https://pompomhub.com/tag/cumswap" class="tag" target="_blank" rel="noopener">#cumswap</a>
+        <a href="https://pompomhub.com/tag/squirt" class="tag" target="_blank" rel="noopener">#squirt</a>
+        <a href="https://pompomhub.com/tag/massage" class="tag" target="_blank" rel="noopener">#massage</a>
+        <a href="https://pompomhub.com/tag/casting" class="tag" target="_blank" rel="noopener">#casting</a>
+        <a href="https://pompomhub.com/tag/public" class="tag" target="_blank" rel="noopener">#public sex</a>
+        <a href="https://pompomhub.com/tag/office" class="tag" target="_blank" rel="noopener">#office</a>
+        <a href="https://pompomhub.com/tag/outdoor" class="tag" target="_blank" rel="noopener">#outdoor</a>
+        <a href="https://pompomhub.com/tag/4k-uhd" class="tag hot" target="_blank" rel="noopener">#4K Ultra HD</a>
+        <a href="https://pompomhub.com/tag/vr-porn" class="tag hot" target="_blank" rel="noopener">#VR Porn</a>
+        <a href="https://pompomhub.com/tag/best-porn" class="tag hot" target="_blank" rel="noopener">#best porn 2025</a>
+        <a href="https://pompomhub.com/tag/free-adult" class="tag hot" target="_blank" rel="noopener">#free adult videos</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section aria-labelledby="features-heading">
+    <div class="section-inner">
+      <span class="section-label">Why PomPom Hub</span>
+      <h2 class="section-title" id="features-heading">Everything You Need,<br />All in One Place</h2>
+      <div class="features-grid reveal">
+        <div class="feature-card">
+          <div class="feature-icon">🎬</div>
+          <div class="feature-title">4K Ultra HD Quality</div>
+          <p class="feature-desc">Stream in the highest quality available — 4K UHD, Full HD 1080p, and 720p — all completely free with zero buffering.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🔍</div>
+          <div class="feature-title">Smart Search & Tags</div>
+          <p class="feature-desc">Find exactly what you want with our advanced tag system, category filtering, and lightning-fast search across 50,000+ videos.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📱</div>
+          <div class="feature-title">Mobile Optimized</div>
+          <p class="feature-desc">Perfectly optimized for all devices — phone, tablet, or desktop. Enjoy smooth playback anywhere, anytime.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🔒</div>
+          <div class="feature-title">100% Safe & Private</div>
+          <p class="feature-desc">No registration required. Browse and watch in complete privacy with our secure, no-tracking platform.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">⚡</div>
+          <div class="feature-title">Daily Updates</div>
+          <p class="feature-desc">Fresh content added every single day. Hundreds of new videos from top studios and amateurs around the world.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🌍</div>
+          <div class="feature-title">Global Content</div>
+          <p class="feature-desc">200+ categories covering every preference, nationality, and style. The most diverse adult content library online.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <div class="cta-banner">
+    <div class="section-inner">
+      <h2>Ready to Explore<br /><em>PomPom Hub?</em></h2>
+      <p>Thousands of free HD videos are waiting. No sign-up. No credit card. Just premium adult entertainment at your fingertips.</p>
+      <a href="https://pompomhub.com" class="btn-primary" target="_blank" rel="noopener" style="font-size:1.05rem;padding:1rem 2.8rem;">
+        🔥 Enter PomPom Hub Now
+      </a>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <a href="/" class="footer-logo">Pom<span>Pom</span> Hub</a>
+    <div class="footer-links">
+      <a href="https://pompomhub.com" target="_blank" rel="noopener">Main Site</a>
+      <a href="https://pompomhub.com/categories" target="_blank" rel="noopener">Categories</a>
+      <a href="https://pompomhub.com/tags" target="_blank" rel="noopener">Tags</a>
+      <a href="/privacy.html">Privacy Policy</a>
+      <a href="/terms.html">Terms of Service</a>
+      <a href="/dmca.html">DMCA</a>
+    </div>
+    <div class="footer-disclaimer">
+      <strong>⚠ Adults Only (18+):</strong> This website contains adult-oriented content. By accessing this site, you confirm that you are at least 18 years old (or the age of majority in your jurisdiction) and that you consent to viewing sexually explicit material. All models appearing in content are 18 years of age or older.
+    </div>
+    <p class="footer-legal">
+      © 2025 PomPom Hub · webtools.ninja · All rights reserved.<br />
+      All content is provided for entertainment purposes. We comply fully with 18 U.S.C. § 2257.
+    </p>
+  </footer>
+
+</div><!-- /wrapper -->
+
+<script>
+  // Age gate logic
+  function enterSite() {
+    sessionStorage.setItem('age_verified', '1');
+    document.getElementById('age-gate').classList.add('hidden');
+    document.getElementById('main-content').style.display = 'block';
+  }
+  function exitSite() {
+    window.location.href = 'https://www.google.com';
+  }
+  // Auto-enter if already verified
+  if (sessionStorage.getItem('age_verified')) {
+    document.getElementById('age-gate').classList.add('hidden');
+    document.getElementById('main-content').style.display = 'block';
+  }
+
+  // Scroll reveal
+  const revealEls = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('visible');
+        observer.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.1 });
+  revealEls.forEach(el => observer.observe(el));
+
+  // Smooth anchor scroll
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', e => {
+      e.preventDefault();
+      const target = document.querySelector(a.getAttribute('href'));
+      if (target) target.scrollIntoView({ behavior: 'smooth' });
+    });
+  });
+
+  // Staggered category card animation
+  const cards = document.querySelectorAll('.cat-card');
+  cards.forEach((card, i) => {
+    card.style.animationDelay = `${i * 0.04}s`;
+  });
+</script>
+</body>
+</html>
