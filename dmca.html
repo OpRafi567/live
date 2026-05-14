@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DMCA Policy – PomPom Hub | webtools.ninja</title>
+  <meta name="description" content="PomPom Hub DMCA Policy. Submit a copyright takedown notice for content on webtools.ninja or pompomhub.com. We respond to all valid DMCA requests promptly." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://webtools.ninja/dmca" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet" />
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --black: #090909;
+      --deep: #0f0a0c;
+      --surface2: #1e1318;
+      --rose: #c0294a;
+      --rose-light: #e84068;
+      --gold: #c9963a;
+      --gold-light: #e8b455;
+      --cream: #f0e8df;
+      --muted: #8a7a82;
+      --border: rgba(192, 41, 74, 0.2);
+      --text: #ede0e5;
+      --ff-display: 'Cormorant Garamond', Georgia, serif;
+      --ff-body: 'DM Sans', system-ui, sans-serif;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--black);
+      color: var(--text);
+      font-family: var(--ff-body);
+      font-size: 16px;
+      line-height: 1.7;
+      overflow-x: hidden;
+      min-height: 100vh;
+    }
+
+    .bg-mesh {
+      position: fixed; inset: 0; z-index: 0; pointer-events: none;
+      background:
+        radial-gradient(ellipse 50% 40% at 10% 15%, rgba(192,41,74,.1) 0%, transparent 55%),
+        radial-gradient(ellipse 40% 30% at 90% 80%, rgba(201,150,58,.07) 0%, transparent 50%);
+    }
+
+    nav {
+      position: sticky; top: 0; z-index: 100;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 1.1rem 2.5rem;
+      background: rgba(9,9,9,.88);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav-logo {
+      font-family: var(--ff-display);
+      font-size: 1.6rem; font-weight: 700;
+      color: var(--cream); text-decoration: none;
+      letter-spacing: -.02em;
+    }
+    .nav-logo span { color: var(--rose-light); }
+    .nav-back {
+      color: var(--muted); text-decoration: none;
+      font-size: .85rem;
+      display: flex; align-items: center; gap: .4rem;
+      transition: color .2s;
+    }
+    .nav-back:hover { color: var(--cream); }
+
+    .wrapper { position: relative; z-index: 1; }
+
+    .page-header {
+      padding: 5rem 1.5rem 3rem;
+      text-align: center;
+      border-bottom: 1px solid var(--border);
+    }
+    .eyebrow {
+      display: inline-block;
+      font-size: .72rem; letter-spacing: .22em; text-transform: uppercase;
+      color: var(--gold);
+      border: 1px solid rgba(201,150,58,.3);
+      border-radius: 100px;
+      padding: .3rem 1rem;
+      margin-bottom: 1.4rem;
+    }
+    .page-header h1 {
+      font-family: var(--ff-display);
+      font-size: clamp(2.2rem, 6vw, 3.8rem);
+      font-weight: 700; color: var(--cream);
+      letter-spacing: -.03em; margin-bottom: .8rem;
+    }
+    .page-header p { color: var(--muted); font-size: .9rem; max-width: 520px; margin: 0 auto; }
+
+    .content {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 4rem 1.5rem 6rem;
+    }
+
+    /* Quick links bar */
+    .quick-links {
+      display: flex; flex-wrap: wrap; gap: .7rem;
+      margin-bottom: 3rem;
+    }
+    .quick-link {
+      background: rgba(192,41,74,.1);
+      border: 1px solid rgba(192,41,74,.25);
+      color: var(--rose-light);
+      text-decoration: none;
+      padding: .45rem 1.1rem;
+      border-radius: 100px;
+      font-size: .83rem;
+      transition: all .2s;
+    }
+    .quick-link:hover { background: rgba(192,41,74,.25); border-color: var(--rose-light); }
+
+    /* TOC */
+    .toc {
+      background: var(--surface2);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 1.6rem 2rem;
+      margin-bottom: 3rem;
+    }
+    .toc-title { font-family: var(--ff-display); font-size: 1.1rem; font-weight: 600; color: var(--cream); margin-bottom: 1rem; }
+    .toc ol { padding-left: 1.2rem; display: flex; flex-direction: column; gap: .35rem; }
+    .toc ol li a { color: var(--muted); text-decoration: none; font-size: .88rem; transition: color .2s; }
+    .toc ol li a:hover { color: var(--rose-light); }
+
+    /* Sections */
+    .policy-section {
+      margin-bottom: 3rem;
+      padding-bottom: 3rem;
+      border-bottom: 1px solid rgba(192,41,74,.12);
+    }
+    .policy-section:last-child { border-bottom: none; }
+
+    .policy-section h2 {
+      font-family: var(--ff-display);
+      font-size: 1.7rem; font-weight: 600;
+      color: var(--cream); letter-spacing: -.02em;
+      margin-bottom: 1rem;
+      display: flex; align-items: center; gap: .6rem;
+    }
+    .section-num {
+      display: inline-flex; align-items: center; justify-content: center;
+      width: 28px; height: 28px;
+      background: rgba(192,41,74,.15);
+      border: 1px solid rgba(192,41,74,.3);
+      border-radius: 50%;
+      font-size: .8rem; font-family: var(--ff-body);
+      color: var(--rose-light); font-weight: 500;
+      flex-shrink: 0;
+    }
+
+    .policy-section p { color: var(--muted); font-size: .95rem; margin-bottom: 1rem; line-height: 1.8; }
+    .policy-section p:last-child { margin-bottom: 0; }
+
+    .policy-section ul, .policy-section ol {
+      padding-left: 1.4rem;
+      margin: .8rem 0 1rem;
+      display: flex; flex-direction: column; gap: .4rem;
+    }
+    .policy-section li { color: var(--muted); font-size: .95rem; line-height: 1.7; }
+    .policy-section ul li::marker { color: var(--rose-light); }
+    .policy-section ol li::marker { color: var(--gold); font-weight: 500; }
+
+    /* Notice form card */
+    .notice-card {
+      background: var(--surface2);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 2rem;
+      margin: 1.5rem 0;
+    }
+    .notice-card h3 {
+      font-family: var(--ff-display);
+      font-size: 1.25rem; font-weight: 600;
+      color: var(--cream); margin-bottom: 1.2rem;
+    }
+    .notice-field {
+      display: flex; flex-direction: column; gap: .3rem;
+      margin-bottom: 1rem;
+    }
+    .notice-field label {
+      font-size: .78rem; letter-spacing: .1em; text-transform: uppercase;
+      color: var(--rose-light); font-weight: 500;
+    }
+    .notice-field p { margin: 0 !important; font-size: .88rem !important; }
+
+    .highlight-box {
+      background: rgba(192,41,74,.07);
+      border-left: 3px solid var(--rose);
+      border-radius: 0 8px 8px 0;
+      padding: 1rem 1.3rem;
+      margin: 1.2rem 0;
+    }
+    .highlight-box p { margin: 0 !important; font-size: .88rem !important; }
+
+    .warning-box {
+      background: rgba(201,150,58,.07);
+      border-left: 3px solid var(--gold);
+      border-radius: 0 8px 8px 0;
+      padding: 1rem 1.3rem;
+      margin: 1.2rem 0;
+    }
+    .warning-box p { margin: 0 !important; font-size: .88rem !important; color: rgba(201,150,58,.85) !important; }
+
+    /* Steps */
+    .steps { display: flex; flex-direction: column; gap: 1rem; margin: 1.2rem 0; }
+    .step {
+      display: flex; gap: 1rem; align-items: flex-start;
+      background: rgba(255,255,255,.02);
+      border: 1px solid rgba(192,41,74,.12);
+      border-radius: 10px;
+      padding: 1rem 1.2rem;
+    }
+    .step-num {
+      width: 28px; height: 28px; border-radius: 50%;
+      background: rgba(192,41,74,.15);
+      border: 1px solid rgba(192,41,74,.3);
+      display: flex; align-items: center; justify-content: center;
+      font-size: .82rem; color: var(--rose-light); font-weight: 500;
+      flex-shrink: 0; margin-top: .1rem;
+    }
+    .step-body { flex: 1; }
+    .step-body strong { color: var(--cream); display: block; margin-bottom: .2rem; font-size: .9rem; }
+    .step-body p { margin: 0 !important; font-size: .87rem !important; line-height: 1.6 !important; }
+
+    /* Email button */
+    .email-btn {
+      display: inline-flex; align-items: center; gap: .5rem;
+      background: linear-gradient(135deg, var(--rose) 0%, #a0203d 100%);
+      color: #fff; text-decoration: none;
+      padding: .8rem 1.8rem;
+      border-radius: 9px;
+      font-size: .9rem; font-weight: 500;
+      letter-spacing: .02em;
+      margin-top: 1rem;
+      transition: all .3s;
+    }
+    .email-btn:hover { transform: translateY(-2px); box-shadow: 0 8px 28px rgba(192,41,74,.4); text-decoration: none; }
+
+    strong { color: var(--cream); font-weight: 500; }
+    a { color: var(--rose-light); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    code {
+      background: rgba(192,41,74,.1);
+      padding: .1rem .4rem; border-radius: 4px;
+      font-size: .85rem; font-family: monospace;
+    }
+
+    footer {
+      background: var(--deep);
+      border-top: 1px solid var(--border);
+      padding: 2.5rem 2rem;
+      text-align: center;
+    }
+    .footer-logo {
+      font-family: var(--ff-display);
+      font-size: 1.6rem; font-weight: 700;
+      color: var(--cream); text-decoration: none;
+      letter-spacing: -.02em;
+    }
+    .footer-logo span { color: var(--rose-light); }
+    .footer-links {
+      display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap;
+      margin: 1rem 0;
+    }
+    .footer-links a { color: var(--muted); font-size: .82rem; text-decoration: none; transition: color .2s; }
+    .footer-links a:hover { color: var(--cream); }
+    .footer-copy { color: rgba(138,122,130,.45); font-size: .75rem; margin-top: .8rem; }
+
+    @media (max-width: 640px) {
+      nav { padding: .9rem 1.2rem; }
+      .page-header { padding: 3.5rem 1.2rem 2.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="bg-mesh" aria-hidden="true"></div>
+
+<div class="wrapper">
+
+  <nav aria-label="Main navigation">
+    <a href="/" class="nav-logo">Pom<span>Pom</span> Hub</a>
+    <a href="/" class="nav-back">← Back to Home</a>
+  </nav>
+
+  <header class="page-header">
+    <div class="eyebrow">Legal Document</div>
+    <h1>DMCA Policy</h1>
+    <p>Last updated: <strong>May 14, 2025</strong> &nbsp;·&nbsp; We respect copyright and respond to all valid takedown requests promptly.</p>
+  </header>
+
+  <main class="content" id="main-content">
+
+    <div class="quick-links" aria-label="Quick links">
+      <a href="#what-is-dmca" class="quick-link">What is DMCA?</a>
+      <a href="#submit-notice" class="quick-link">Submit a Notice</a>
+      <a href="#counter-notice" class="quick-link">Counter-Notice</a>
+      <a href="#repeat-infringers" class="quick-link">Repeat Infringers</a>
+      <a href="#contact" class="quick-link">Contact</a>
+    </div>
+
+    <div class="toc" aria-label="Table of contents">
+      <div class="toc-title">📋 Table of Contents</div>
+      <ol>
+        <li><a href="#overview">Overview & Our Commitment</a></li>
+        <li><a href="#what-is-dmca">What is the DMCA?</a></li>
+        <li><a href="#submit-notice">How to Submit a Takedown Notice</a></li>
+        <li><a href="#required-info">Required Information in Your Notice</a></li>
+        <li><a href="#process">Our Review Process</a></li>
+        <li><a href="#counter-notice">Filing a Counter-Notice</a></li>
+        <li><a href="#repeat-infringers">Repeat Infringer Policy</a></li>
+        <li><a href="#false-claims">False DMCA Claims</a></li>
+        <li><a href="#contact">Contact Our DMCA Agent</a></li>
+      </ol>
+    </div>
+
+    <!-- 1 -->
+    <div class="policy-section" id="overview">
+      <h2><span class="section-num" aria-hidden="true">1</span> Overview & Our Commitment</h2>
+      <p><strong>PomPom Hub</strong> (operating at <strong>webtools.ninja</strong> and <strong>pompomhub.com</strong>) deeply respects the intellectual property rights of content creators, studios, and copyright holders. We are committed to complying with the <strong>Digital Millennium Copyright Act (DMCA)</strong> and other applicable copyright laws.</p>
+      <p>If you believe that your copyrighted work has been reproduced, distributed, or otherwise infringed upon through our service, please follow the procedure below to notify us. We take all valid DMCA requests seriously and will act promptly to investigate and, where appropriate, remove the infringing content.</p>
+      <div class="highlight-box">
+        <p>✉️ For the fastest response, email your DMCA notice directly to <a href="mailto:dmca@pompomhub.com">dmca@pompomhub.com</a>. We aim to respond within <strong>3–5 business days</strong>.</p>
+      </div>
+    </div>
+
+    <!-- 2 -->
+    <div class="policy-section" id="what-is-dmca">
+      <h2><span class="section-num" aria-hidden="true">2</span> What is the DMCA?</h2>
+      <p>The <strong>Digital Millennium Copyright Act (DMCA)</strong> is a United States copyright law enacted in 1998 that addresses the rights and obligations of both copyright owners and online service providers in the digital environment.</p>
+      <p>Under the DMCA's "safe harbor" provisions (17 U.S.C. § 512), online service providers like PomPom Hub are protected from liability for user-uploaded infringing content — provided that we:</p>
+      <ul>
+        <li>Have no actual knowledge of the infringing activity</li>
+        <li>Do not financially benefit directly from the infringing activity</li>
+        <li>Act expeditiously to remove infringing material upon receiving proper notice</li>
+        <li>Maintain a designated DMCA agent registered with the U.S. Copyright Office</li>
+      </ul>
+      <p>This page outlines how copyright holders can notify us of potential infringement and how we handle such notifications.</p>
+    </div>
+
+    <!-- 3 -->
+    <div class="policy-section" id="submit-notice">
+      <h2><span class="section-num" aria-hidden="true">3</span> How to Submit a Takedown Notice</h2>
+      <p>If you are a copyright owner (or authorized to act on their behalf) and believe that content on our Site infringes your copyright, please send a written DMCA takedown notice to our designated DMCA agent using one of the following methods:</p>
+
+      <div class="notice-card">
+        <h3>📧 Preferred Method — Email</h3>
+        <div class="notice-field">
+          <label>DMCA Email Address</label>
+          <p><a href="mailto:dmca@pompomhub.com">dmca@pompomhub.com</a></p>
+        </div>
+        <div class="notice-field">
+          <label>Subject Line Format</label>
+          <p><code>DMCA Takedown Notice – [Your Name] – [Brief Description]</code></p>
+        </div>
+        <div class="notice-field">
+          <label>Response Time</label>
+          <p>3–5 business days for acknowledgment; removal within 48 hours of validation</p>
+        </div>
+        <a href="mailto:dmca@pompomhub.com?subject=DMCA%20Takedown%20Notice" class="email-btn">
+          ✉️ Send DMCA Notice Now
+        </a>
+      </div>
+    </div>
+
+    <!-- 4 -->
+    <div class="policy-section" id="required-info">
+      <h2><span class="section-num" aria-hidden="true">4</span> Required Information in Your Notice</h2>
+      <p>To be valid under 17 U.S.C. § 512(c)(3), your DMCA takedown notice <strong>must include all of the following</strong>:</p>
+
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">1</div>
+          <div class="step-body">
+            <strong>Your Signature</strong>
+            <p>A physical or electronic signature of the copyright owner or a person authorized to act on their behalf.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <div class="step-body">
+            <strong>Identification of the Copyrighted Work</strong>
+            <p>A description of the copyrighted work you claim has been infringed. If multiple works are covered, a representative list is acceptable.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <div class="step-body">
+            <strong>Location of the Infringing Material</strong>
+            <p>The exact URL(s) on our Site where the infringing content is located, so we can identify and remove it.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">4</div>
+          <div class="step-body">
+            <strong>Your Contact Information</strong>
+            <p>Your full name, mailing address, telephone number, and email address so we can reach you.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">5</div>
+          <div class="step-body">
+            <strong>Good-Faith Statement</strong>
+            <p>A statement that you have a good-faith belief that the use of the material is not authorized by the copyright owner, its agent, or the law.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">6</div>
+          <div class="step-body">
+            <strong>Accuracy Statement</strong>
+            <p>A statement that the information in the notification is accurate and, under penalty of perjury, that you are the copyright owner or are authorized to act on their behalf.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="warning-box">
+        <p>⚠️ Notices missing any of the above required elements may be considered deficient and may not receive a response. Please ensure all fields are complete before submitting.</p>
+      </div>
+    </div>
+
+    <!-- 5 -->
+    <div class="policy-section" id="process">
+      <h2><span class="section-num" aria-hidden="true">5</span> Our Review Process</h2>
+      <p>Once we receive a valid DMCA notice, our process is as follows:</p>
+      <ul>
+        <li><strong>Acknowledgment:</strong> We will acknowledge receipt of your notice within 3–5 business days</li>
+        <li><strong>Review:</strong> Our team reviews the notice for completeness and validity</li>
+        <li><strong>Removal:</strong> If the notice is valid, we will remove or disable access to the identified content within 48 hours of validation</li>
+        <li><strong>Notification:</strong> We will notify the uploader (if applicable) that their content has been removed</li>
+        <li><strong>Record:</strong> We maintain records of all DMCA notices received</li>
+      </ul>
+      <p>We reserve the right to reject notices that are incomplete, fraudulent, or submitted in bad faith.</p>
+    </div>
+
+    <!-- 6 -->
+    <div class="policy-section" id="counter-notice">
+      <h2><span class="section-num" aria-hidden="true">6</span> Filing a Counter-Notice</h2>
+      <p>If you believe that content was removed from our Site as a result of a mistaken or misidentified DMCA notice, you may file a counter-notice. Under 17 U.S.C. § 512(g)(3), a valid counter-notice must include:</p>
+      <ul>
+        <li>Your physical or electronic signature</li>
+        <li>Identification of the content that was removed and its location before removal</li>
+        <li>A statement under penalty of perjury that you have a good-faith belief the content was removed due to mistake or misidentification</li>
+        <li>Your name, address, telephone number, and email address</li>
+        <li>A statement that you consent to the jurisdiction of the Federal District Court for the judicial district in which your address is located, or (if outside the U.S.) any judicial district in which we may be found</li>
+        <li>A statement that you will accept service of process from the person who submitted the original DMCA notice</li>
+      </ul>
+      <div class="highlight-box">
+        <p>📬 Send counter-notices to: <a href="mailto:dmca@pompomhub.com">dmca@pompomhub.com</a> with the subject line: <code>DMCA Counter-Notice – [Your Name]</code>. If valid, content may be restored within 10–14 business days.</p>
+      </div>
+    </div>
+
+    <!-- 7 -->
+    <div class="policy-section" id="repeat-infringers">
+      <h2><span class="section-num" aria-hidden="true">7</span> Repeat Infringer Policy</h2>
+      <p>In accordance with the DMCA and our commitment to respecting intellectual property, PomPom Hub maintains a <strong>strict repeat infringer policy</strong>.</p>
+      <p>Users or content contributors who are found to be repeat infringers — meaning they have had content removed multiple times due to valid copyright complaints — will have their access to our platform <strong>permanently terminated</strong>.</p>
+      <p>We define a repeat infringer as any person who has received more than two valid DMCA takedown notices in any rolling 12-month period. All repeat infringer actions are logged and final.</p>
+    </div>
+
+    <!-- 8 -->
+    <div class="policy-section" id="false-claims">
+      <h2><span class="section-num" aria-hidden="true">8</span> False DMCA Claims</h2>
+      <div class="warning-box">
+        <p>⚠️ <strong>Warning:</strong> Submitting a false or fraudulent DMCA notice is a serious legal matter. Under 17 U.S.C. § 512(f), any person who knowingly and materially misrepresents that content is infringing may be liable for damages, including court costs and attorneys' fees, incurred by the alleged infringer, the content owner, or the service provider.</p>
+      </div>
+      <p>We take abuse of the DMCA process seriously. Notices submitted in bad faith — including those targeting content that is clearly non-infringing, licensed, or fair use — will be rejected and may be referred to legal counsel.</p>
+    </div>
+
+    <!-- 9 -->
+    <div class="policy-section" id="contact">
+      <h2><span class="section-num" aria-hidden="true">9</span> Contact Our DMCA Agent</h2>
+      <p>All DMCA-related correspondence should be directed to our designated agent:</p>
+
+      <div class="notice-card">
+        <h3>🛡️ PomPom Hub — Designated DMCA Agent</h3>
+        <div class="notice-field">
+          <label>DMCA Notices</label>
+          <p><a href="mailto:dmca@pompomhub.com">dmca@pompomhub.com</a></p>
+        </div>
+        <div class="notice-field">
+          <label>General Legal</label>
+          <p><a href="mailto:legal@pompomhub.com">legal@pompomhub.com</a></p>
+        </div>
+        <div class="notice-field">
+          <label>Privacy Concerns</label>
+          <p><a href="mailto:privacy@pompomhub.com">privacy@pompomhub.com</a></p>
+        </div>
+        <div class="notice-field">
+          <label>Website</label>
+          <p><a href="https://pompomhub.com" target="_blank" rel="noopener">pompomhub.com</a> &nbsp;·&nbsp; <a href="https://webtools.ninja">webtools.ninja</a></p>
+        </div>
+        <div class="notice-field">
+          <label>Response Time</label>
+          <p>3–5 business days for acknowledgment</p>
+        </div>
+      </div>
+
+      <p>For related legal documents, please also review our <a href="/privacy.html">Privacy Policy</a> and <a href="/terms.html">Terms of Service</a>.</p>
+    </div>
+
+  </main>
+
+  <footer>
+    <a href="/" class="footer-logo">Pom<span>Pom</span> Hub</a>
+    <div class="footer-links">
+      <a href="/">Home</a>
+      <a href="https://pompomhub.com" target="_blank" rel="noopener">Main Site</a>
+      <a href="/privacy.html">Privacy Policy</a>
+      <a href="/terms.html">Terms of Service</a>
+      <a href="/dmca.html">DMCA</a>
+    </div>
+    <p class="footer-copy">© 2025 PomPom Hub · webtools.ninja · All rights reserved.</p>
+  </footer>
+
+</div>
+</body>
+</html>
