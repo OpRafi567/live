@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://webtools.ninja/sitemap.xml
+
+# Block common bots that waste bandwidth
+User-agent: SemrushBot
+Disallow: /
+User-agent: AhrefsBot
+Disallow: /
+User-agent: MJ12bot
+Disallow: /
