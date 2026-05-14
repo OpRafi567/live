@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy – PomPom Hub | webtools.ninja</title>
+  <meta name="description" content="PomPom Hub privacy policy. Learn how we handle your data, cookies, and browsing information when you visit webtools.ninja or pompomhub.com." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://webtools.ninja/privacy" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet" />
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --black: #090909;
+      --deep: #0f0a0c;
+      --surface2: #1e1318;
+      --rose: #c0294a;
+      --rose-light: #e84068;
+      --gold: #c9963a;
+      --cream: #f0e8df;
+      --muted: #8a7a82;
+      --border: rgba(192, 41, 74, 0.2);
+      --text: #ede0e5;
+      --ff-display: 'Cormorant Garamond', Georgia, serif;
+      --ff-body: 'DM Sans', system-ui, sans-serif;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--black);
+      color: var(--text);
+      font-family: var(--ff-body);
+      font-size: 16px;
+      line-height: 1.7;
+      overflow-x: hidden;
+      min-height: 100vh;
+    }
+
+    .bg-mesh {
+      position: fixed; inset: 0; z-index: 0; pointer-events: none;
+      background:
+        radial-gradient(ellipse 50% 40% at 15% 10%, rgba(192,41,74,.1) 0%, transparent 55%),
+        radial-gradient(ellipse 40% 30% at 85% 90%, rgba(201,150,58,.07) 0%, transparent 50%);
+    }
+
+    /* Nav */
+    nav {
+      position: sticky; top: 0; z-index: 100;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 1.1rem 2.5rem;
+      background: rgba(9,9,9,.88);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav-logo {
+      font-family: var(--ff-display);
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: var(--cream);
+      text-decoration: none;
+      letter-spacing: -.02em;
+    }
+    .nav-logo span { color: var(--rose-light); }
+    .nav-back {
+      color: var(--muted);
+      text-decoration: none;
+      font-size: .85rem;
+      display: flex; align-items: center; gap: .4rem;
+      transition: color .2s;
+    }
+    .nav-back:hover { color: var(--cream); }
+
+    /* Page layout */
+    .wrapper { position: relative; z-index: 1; }
+
+    .page-header {
+      padding: 5rem 1.5rem 3rem;
+      text-align: center;
+      border-bottom: 1px solid var(--border);
+    }
+    .page-header .eyebrow {
+      display: inline-block;
+      font-size: .72rem;
+      letter-spacing: .22em;
+      text-transform: uppercase;
+      color: var(--gold);
+      border: 1px solid rgba(201,150,58,.3);
+      border-radius: 100px;
+      padding: .3rem 1rem;
+      margin-bottom: 1.4rem;
+    }
+    .page-header h1 {
+      font-family: var(--ff-display);
+      font-size: clamp(2.2rem, 6vw, 3.8rem);
+      font-weight: 700;
+      color: var(--cream);
+      letter-spacing: -.03em;
+      margin-bottom: .8rem;
+    }
+    .page-header p {
+      color: var(--muted);
+      font-size: .9rem;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    /* Content */
+    .content {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 4rem 1.5rem 6rem;
+    }
+
+    .toc {
+      background: var(--surface2);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 1.6rem 2rem;
+      margin-bottom: 3rem;
+    }
+    .toc-title {
+      font-family: var(--ff-display);
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--cream);
+      margin-bottom: 1rem;
+    }
+    .toc ol {
+      padding-left: 1.2rem;
+      display: flex;
+      flex-direction: column;
+      gap: .35rem;
+    }
+    .toc ol li a {
+      color: var(--muted);
+      text-decoration: none;
+      font-size: .88rem;
+      transition: color .2s;
+    }
+    .toc ol li a:hover { color: var(--rose-light); }
+
+    .policy-section {
+      margin-bottom: 3rem;
+      padding-bottom: 3rem;
+      border-bottom: 1px solid rgba(192,41,74,.12);
+    }
+    .policy-section:last-child { border-bottom: none; }
+
+    .policy-section h2 {
+      font-family: var(--ff-display);
+      font-size: 1.7rem;
+      font-weight: 600;
+      color: var(--cream);
+      letter-spacing: -.02em;
+      margin-bottom: 1rem;
+      display: flex; align-items: center; gap: .6rem;
+    }
+    .section-num {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 28px; height: 28px;
+      background: rgba(192,41,74,.15);
+      border: 1px solid rgba(192,41,74,.3);
+      border-radius: 50%;
+      font-size: .8rem;
+      font-family: var(--ff-body);
+      color: var(--rose-light);
+      font-weight: 500;
+      flex-shrink: 0;
+    }
+
+    .policy-section p {
+      color: var(--muted);
+      font-size: .95rem;
+      margin-bottom: 1rem;
+      line-height: 1.8;
+    }
+    .policy-section p:last-child { margin-bottom: 0; }
+
+    .policy-section ul {
+      padding-left: 1.4rem;
+      margin: .8rem 0 1rem;
+      display: flex; flex-direction: column; gap: .4rem;
+    }
+    .policy-section ul li {
+      color: var(--muted);
+      font-size: .95rem;
+      line-height: 1.7;
+      position: relative;
+    }
+    .policy-section ul li::marker { color: var(--rose-light); }
+
+    .highlight-box {
+      background: rgba(192,41,74,.07);
+      border-left: 3px solid var(--rose);
+      border-radius: 0 8px 8px 0;
+      padding: 1rem 1.3rem;
+      margin: 1.2rem 0;
+    }
+    .highlight-box p {
+      margin: 0 !important;
+      font-size: .88rem !important;
+    }
+
+    strong { color: var(--cream); font-weight: 500; }
+
+    a { color: var(--rose-light); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* Footer */
+    footer {
+      background: var(--deep);
+      border-top: 1px solid var(--border);
+      padding: 2.5rem 2rem;
+      text-align: center;
+    }
+    .footer-logo {
+      font-family: var(--ff-display);
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: var(--cream);
+      text-decoration: none;
+      letter-spacing: -.02em;
+    }
+    .footer-logo span { color: var(--rose-light); }
+    .footer-links {
+      display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap;
+      margin: 1rem 0;
+    }
+    .footer-links a {
+      color: var(--muted); font-size: .82rem; text-decoration: none; transition: color .2s;
+    }
+    .footer-links a:hover { color: var(--cream); }
+    .footer-copy { color: rgba(138,122,130,.45); font-size: .75rem; margin-top: .8rem; }
+
+    @media (max-width: 640px) {
+      nav { padding: .9rem 1.2rem; }
+      .page-header { padding: 3.5rem 1.2rem 2.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="bg-mesh" aria-hidden="true"></div>
+
+<div class="wrapper">
+
+  <nav aria-label="Main navigation">
+    <a href="/" class="nav-logo">Pom<span>Pom</span> Hub</a>
+    <a href="/" class="nav-back">← Back to Home</a>
+  </nav>
+
+  <header class="page-header">
+    <div class="eyebrow">Legal Document</div>
+    <h1>Privacy Policy</h1>
+    <p>Last updated: <strong>May 14, 2025</strong> &nbsp;·&nbsp; Effective immediately</p>
+  </header>
+
+  <main class="content" id="main-content">
+
+    <div class="toc" aria-label="Table of contents">
+      <div class="toc-title">📋 Table of Contents</div>
+      <ol>
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#information-we-collect">Information We Collect</a></li>
+        <li><a href="#how-we-use">How We Use Your Information</a></li>
+        <li><a href="#cookies">Cookies & Tracking Technologies</a></li>
+        <li><a href="#third-parties">Third-Party Services</a></li>
+        <li><a href="#data-security">Data Security</a></li>
+        <li><a href="#your-rights">Your Rights</a></li>
+        <li><a href="#childrens-privacy">Children's Privacy</a></li>
+        <li><a href="#changes">Changes to This Policy</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ol>
+    </div>
+
+    <!-- 1 -->
+    <div class="policy-section" id="introduction">
+      <h2><span class="section-num" aria-hidden="true">1</span> Introduction</h2>
+      <p>Welcome to <strong>PomPom Hub</strong> ("we," "us," or "our"), accessible at <strong>webtools.ninja</strong> and <strong>pompomhub.com</strong>. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website.</p>
+      <div class="highlight-box">
+        <p>⚠️ <strong>This website is strictly for adults (18+).</strong> By using this site, you confirm that you are at least 18 years old. We do not knowingly collect data from minors.</p>
+      </div>
+      <p>Please read this policy carefully. If you disagree with its terms, please discontinue use of our site.</p>
+    </div>
+
+    <!-- 2 -->
+    <div class="policy-section" id="information-we-collect">
+      <h2><span class="section-num" aria-hidden="true">2</span> Information We Collect</h2>
+      <p>We collect several types of information to provide and improve our service:</p>
+
+      <p><strong>Automatically collected information</strong> when you visit our site:</p>
+      <ul>
+        <li>IP address (anonymized)</li>
+        <li>Browser type and version</li>
+        <li>Operating system</li>
+        <li>Pages visited and time spent on each page</li>
+        <li>Referring URL (the page you came from)</li>
+        <li>Date and time of your visit</li>
+        <li>Device type (mobile, tablet, desktop)</li>
+      </ul>
+
+      <p><strong>Information you voluntarily provide</strong> (if applicable):</p>
+      <ul>
+        <li>Contact form submissions</li>
+        <li>DMCA takedown requests</li>
+        <li>Email correspondence</li>
+      </ul>
+
+      <p>We do <strong>not</strong> require account registration and do not collect your name, address, or payment information on this site.</p>
+    </div>
+
+    <!-- 3 -->
+    <div class="policy-section" id="how-we-use">
+      <h2><span class="section-num" aria-hidden="true">3</span> How We Use Your Information</h2>
+      <p>We use the information we collect for the following purposes:</p>
+      <ul>
+        <li>To operate, maintain, and improve our website</li>
+        <li>To analyze site traffic and user behavior (in aggregate, anonymous form)</li>
+        <li>To detect and prevent fraud, abuse, or illegal activity</li>
+        <li>To respond to your communications and support requests</li>
+        <li>To comply with applicable laws and legal obligations</li>
+        <li>To enforce our Terms of Service</li>
+      </ul>
+      <p>We do <strong>not</strong> sell, rent, or trade your personal information to third parties for marketing purposes.</p>
+    </div>
+
+    <!-- 4 -->
+    <div class="policy-section" id="cookies">
+      <h2><span class="section-num" aria-hidden="true">4</span> Cookies & Tracking Technologies</h2>
+      <p>We use cookies and similar technologies to enhance your experience on our site.</p>
+
+      <p><strong>Essential cookies</strong> — required for the site to function:</p>
+      <ul>
+        <li><code style="background:rgba(192,41,74,.1);padding:.1rem .4rem;border-radius:4px;font-size:.85rem;">age_verified</code> — Stores your age verification confirmation for the session</li>
+        <li>Session cookies for navigation and security</li>
+      </ul>
+
+      <p><strong>Analytics cookies</strong> — used to understand traffic patterns:</p>
+      <ul>
+        <li>We may use Google Analytics or similar tools to collect anonymized usage statistics</li>
+        <li>These cookies do not identify you personally</li>
+      </ul>
+
+      <p><strong>Advertising cookies</strong> — if third-party ads are displayed:</p>
+      <ul>
+        <li>Third-party advertisers may place cookies on your device</li>
+        <li>These are governed by the respective third party's privacy policy</li>
+      </ul>
+
+      <div class="highlight-box">
+        <p>You can control cookies through your browser settings. Disabling cookies may affect site functionality. For more info, visit <a href="https://www.allaboutcookies.org" target="_blank" rel="noopener">allaboutcookies.org</a>.</p>
+      </div>
+    </div>
+
+    <!-- 5 -->
+    <div class="policy-section" id="third-parties">
+      <h2><span class="section-num" aria-hidden="true">5</span> Third-Party Services</h2>
+      <p>Our site may link to or integrate with third-party services, including:</p>
+      <ul>
+        <li><strong>pompomhub.com</strong> — our main content platform, governed by its own privacy policy</li>
+        <li><strong>Google Analytics</strong> — anonymized traffic analytics (<a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>)</li>
+        <li><strong>Google Fonts</strong> — typography loaded from Google's servers</li>
+        <li><strong>Advertising networks</strong> — may collect data per their own policies</li>
+      </ul>
+      <p>We are not responsible for the privacy practices of third-party websites. We encourage you to review their privacy policies before providing any information.</p>
+    </div>
+
+    <!-- 6 -->
+    <div class="policy-section" id="data-security">
+      <h2><span class="section-num" aria-hidden="true">6</span> Data Security</h2>
+      <p>We implement appropriate technical and organizational measures to protect your information against unauthorized access, alteration, disclosure, or destruction. These include:</p>
+      <ul>
+        <li>HTTPS encryption for all data in transit</li>
+        <li>Secure hosting infrastructure on Vercel</li>
+        <li>Regular security reviews</li>
+        <li>Strict security headers (X-Frame-Options, X-XSS-Protection, etc.)</li>
+      </ul>
+      <p>However, no method of transmission over the internet is 100% secure. We cannot guarantee absolute security of your data.</p>
+    </div>
+
+    <!-- 7 -->
+    <div class="policy-section" id="your-rights">
+      <h2><span class="section-num" aria-hidden="true">7</span> Your Rights</h2>
+      <p>Depending on your location, you may have the following rights regarding your personal data:</p>
+      <ul>
+        <li><strong>Access</strong> — Request a copy of the data we hold about you</li>
+        <li><strong>Correction</strong> — Request correction of inaccurate data</li>
+        <li><strong>Deletion</strong> — Request deletion of your personal data ("right to be forgotten")</li>
+        <li><strong>Objection</strong> — Object to processing of your data in certain circumstances</li>
+        <li><strong>Portability</strong> — Request your data in a portable format</li>
+        <li><strong>Opt-out</strong> — Opt out of analytics tracking via browser settings or Do Not Track</li>
+      </ul>
+      <p>To exercise any of these rights, contact us at the email listed in Section 10. We will respond within 30 days.</p>
+    </div>
+
+    <!-- 8 -->
+    <div class="policy-section" id="childrens-privacy">
+      <h2><span class="section-num" aria-hidden="true">8</span> Children's Privacy</h2>
+      <div class="highlight-box">
+        <p>🚫 This website contains adult content and is <strong>strictly intended for users 18 years of age or older</strong>. We do not knowingly collect any personal information from individuals under 18. If you believe a minor has accessed our site or provided information, please contact us immediately and we will take steps to remove such information.</p>
+      </div>
+      <p>This site complies with the <strong>Children's Online Privacy Protection Act (COPPA)</strong> and equivalent regulations in applicable jurisdictions.</p>
+    </div>
+
+    <!-- 9 -->
+    <div class="policy-section" id="changes">
+      <h2><span class="section-num" aria-hidden="true">9</span> Changes to This Policy</h2>
+      <p>We may update this Privacy Policy from time to time. When we do, we will revise the "Last Updated" date at the top of this page. For significant changes, we may also provide additional notice on our homepage.</p>
+      <p>Your continued use of our website after any changes constitutes your acceptance of the new Privacy Policy. We encourage you to periodically review this page.</p>
+    </div>
+
+    <!-- 10 -->
+    <div class="policy-section" id="contact">
+      <h2><span class="section-num" aria-hidden="true">10</span> Contact Us</h2>
+      <p>If you have questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact us:</p>
+      <ul>
+        <li><strong>Website:</strong> <a href="https://pompomhub.com" target="_blank" rel="noopener">pompomhub.com</a></li>
+        <li><strong>Email:</strong> <a href="mailto:privacy@pompomhub.com">privacy@pompomhub.com</a></li>
+        <li><strong>DMCA requests:</strong> <a href="/dmca.html">dmca.html</a></li>
+      </ul>
+      <p>We aim to respond to all inquiries within <strong>30 business days</strong>.</p>
+    </div>
+
+  </main>
+
+  <footer>
+    <a href="/" class="footer-logo">Pom<span>Pom</span> Hub</a>
+    <div class="footer-links">
+      <a href="/">Home</a>
+      <a href="https://pompomhub.com" target="_blank" rel="noopener">Main Site</a>
+      <a href="/privacy.html">Privacy Policy</a>
+      <a href="/terms.html">Terms of Service</a>
+      <a href="/dmca.html">DMCA</a>
+    </div>
+    <p class="footer-copy">© 2025 PomPom Hub · webtools.ninja · All rights reserved.</p>
+  </footer>
+
+</div>
+
+</body>
+</html>
